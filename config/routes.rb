@@ -1,11 +1,23 @@
 Wouldupay::Application.routes.draw do
+  get "pages/home"
+
+  get "pages/help"
+
+  get "pages/about"
+
+  get "pages/contact"
+
   resources :crowds
-
-
   resources :users
 
+  root :to => 'welcome#index'
 
-  # The priority is based upon order of creation:
+  match "home" => 'pages#home'
+  match "help" => 'pages#help'
+  match "about" => 'pages#about'
+  match "contact" => 'pages#contact'
+
+# The priority is based upon order of creation:
   # first created -> highest priority.
 
   # Sample of regular route:
