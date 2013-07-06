@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Price:</b>
+  <%= @crowd.price %>
+</p>
+
+<p>
+  <b>Title:</b>
+  <%= @crowd.title %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @crowd.description %>
+</p>
+
+<p>
+  <b>Image:</b>
+  <%= @crowd.image %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%= @crowd.user_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_crowd_path(@crowd) %> |
+<%= link_to 'Back', crowds_path %>

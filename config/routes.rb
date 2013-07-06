@@ -1,4 +1,7 @@
 Wouldupay::Application.routes.draw do
+  resources :crowds
+
+
   resources :users
 
 
